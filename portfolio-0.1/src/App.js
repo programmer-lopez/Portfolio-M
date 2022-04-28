@@ -1,9 +1,14 @@
-import './App.css';
+import React from 'react'
+import Sidebar from './Sidebar'
+import ToolBar from './ToolBar'
 
-function App() {
+const App = () => {
   return (
-    <div></div>
-  );
+    <div>
+      <ToolBar/>
+      <Sidebar/>
+    </div>
+  )
 }
 
-export default App;
+export default App
