@@ -5,9 +5,9 @@ import Backdrop from './Backdrop';
 
 const App = () => {
 
-  const[Sidebar, setSidebar] = useState (false)
+  const[sidebar, setSidebar] = useState(false);
 
-  const toghleSidebar = () => {
+  const toggleSidebar = () => {
     setSidebar((prevState) => !prevState)
   }
 
@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <ToolBar openSidebar = {toggleSidebar}/>
       <Backdrop/>
-      <Sidebar/>
+      <Sidebar sidebar={sidebar}/>
     </div>
   )
 }
