@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <ToolBar openSidebar = {toggleSidebar}/>
-      <Backdrop/>
+      <Backdrop sidebar={sidebar} closeSidebar={toggleSidebar}/>
       <Sidebar sidebar={sidebar}/>
     </div>
   )

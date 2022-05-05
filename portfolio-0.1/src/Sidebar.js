@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sidebar = ({Sidebar}) => {
+const Sidebar = ({sidebar}) => {
   return (
     <div className={Sidebar?"sidebar sidebar--open":"sidebar"}>
         <li class="ri-home-gear-fill">Home</li>

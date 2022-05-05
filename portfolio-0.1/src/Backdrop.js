@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Backdrop = () => {
+const Backdrop = ({sidebar, closeSidebar}) => {
   return (
-    <div className='backdrop'></div>
+    <div className={sidebar?"backdrop backdrop--open":"backdrop"} onClick={closeSidebar}></div>
   )
 }
 
