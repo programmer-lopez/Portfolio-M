@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Sidebar from './Sidebar'
-import ToolBar from './ToolBar'
+import React, { useState } from 'react';
+import Sidebar from './Sidebar';
+import ToolBar from './ToolBar';
 import Backdrop from './Backdrop';
 
 const App = () => {
