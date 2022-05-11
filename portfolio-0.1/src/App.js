@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import ToolBar from './ToolBar';
-import Backdrop from './Backdrop';
+import About from "./About";
+import "./App.css";
+import Blog from "./Blog";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Home from "./Home";
+import Project from "./Project";
+import Service from "./Service";
 
-const App = () => {
-
-  const[sidebar, setSidebar] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebar((prevState) => !prevState)
-  }
-
+function App() {
   return (
-    <div>
-      <ToolBar openSidebar = {toggleSidebar}/>
-      <Backdrop sidebar={sidebar} closeSidebar={toggleSidebar}/>
-      <Sidebar sidebar={sidebar}/>
+    <div className="App">
+       <Home />
+       <About />
+       <Service />
+       <Project />
+       <Blog />
+       <Contact />
+       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
